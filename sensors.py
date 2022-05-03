@@ -53,13 +53,6 @@ class TemperatureProbe:
 # Class for managing the wall mounted temperature and humidity sensor
 class HumiditySensor:
 
-    # while True:
-    #     print(read_temp())
-    #     print("\nTemperature: %0.1f C" % (sensor.temperature * 9.0 / 5.0 + 32.0))
-    #     print("Humidity: %0.1f %%" % sensor.relative_humidity)
-
-    #     time.sleep(1)
-
     def __init__(self):
         # Create sensor object, communicating over the board's default I2C bus
         # To pull values use sensor.temperature, sensor.relative_humidity

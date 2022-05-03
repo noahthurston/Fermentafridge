@@ -1,9 +1,7 @@
 # fsm.py
 
 
-
-
-
+# Class for regulating the humidifier using a finite-state machine
 class HumidityFSM:
     def __init__(self, goalHumidity, minHumidity, maxHumidity, humidityPlug, verbose=False):
         self.currState = 1
@@ -54,9 +52,6 @@ class HumidityFSM:
             # plug off
             self.humidityPlug.turnOff()
 
-
-
-
     def getState(self):
         return self.currState
 
@@ -64,10 +59,7 @@ class HumidityFSM:
         self.currState = stateInt
 
 
-
-
-
-
+#  Class for regulating the heater/cooler using a finite-state machine
 class TemperatureFSM:
     def __init__(self, goalTemp, minTemp, temperaturePlug, verbose=False):
         self.currState = 1

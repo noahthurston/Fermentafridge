@@ -7,14 +7,6 @@ import asyncio
 # Class for managing the kasa smart plugs
 class SmartPlug:
 
-    # plug = k.SmartPlug("192.168.1.115")
-
-    # def turn_on():
-    #   asyncio.run(plug.turn_on())
-
-    # def turn_off():
-    #       asyncio.run(plug.turn_off())
-
     def __init__(self, ip_addr_string):
         self.ip_addr_string = ip_addr_string
         self.plug = k.SmartPlug(ip_addr_string)

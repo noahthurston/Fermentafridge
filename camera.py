@@ -2,14 +2,10 @@
 
 import time
 import subprocess
-from picamera import PiCamera
-
 
 # Camera operator class
 class Camera:
     def __init__(self, folder_string):
-        # self.camera = PiCamera()
-
         self.folder_string = folder_string
         subprocess.run(["mkdir", folder_string])
 
